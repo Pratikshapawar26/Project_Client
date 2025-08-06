@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    <script>
+        debugger
+        function Onread(){
+            debugger;
+            const value = document.getElementById('txt').value;
+            const copiedname = document.getElementById('txtName').value = value;
+        //    console.log(value);
+           alert(value)
+        }
+        function Readname(){
+            debugger
+            const cityname = document.getElementById('textname').value
+            const cityprint = document.getElementById("CityName").value = cityname;
+            alert(cityprint);
+            console.log(cityprint)
+
+        }
+        function Ondisplay(){
+            debugger;
+            let txtp = document.getElementById('Txt1'). innerHTML;
+            debugger;
+            alert(txtp);
+        }
+
+        function Alldiv(){
+            debugger;
+            const divmethod = document.getElementById("Divshow").innerText;
+            debugger;
+            alert(divmethod)
+        }
+
+        function samemethod(){
+            debugger;
+            let elementmt = document.getElementsByClassName("txt1");
+            debugger;
+            for (let index = 0; index < elementmt.length; index++) {
+                debugger
+                const element = elementmt[index].innerText = 'pratiksha'
+                alert(element)
+                
+            }
+        }
+        function gender(){
+            // let radios = document.getElementsByClassName('Malefemale');
+            // debugger;
+            // for(let i=0 ; i<radios.length; i++){
+            //     debugger;
+            //     if(radios[i].checked){
+            //         debugger
+            //         console.log("selected Gender" , radios[i].value);
+            //         return ;
+            //     }
+            // }
+            // console.log("No selected Gender")
+        }
+       
+
+        
+         
+    </script>
+
+    <div class="row">
+        <div class="col-3" id="txt2">
+            <input type="radio" name="gender" value="Male" onclick="console.log('select Gender :',this.value)"> Male 
+            <input type="radio" name="gender" value="Female" onclick="console.log('select Gender :',this.value)">Female
+        </div>
+        <div class="col-3">
+            <button class="btn btn-primary" onclick="gender()">SelectGender</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3 mt-3">
+            <div id="Divshow">
+                <p>Hii</p>
+                <label for="">Js</label>
+                <span>Angular</span>
+            </div>
+        </div>
+        <div class="col-3 mt-3">
+            <button class="btn btn-danger" onclick="Alldiv()">Showmsg</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-3 mt-3">
+           <p id="Txt1">Hello</p>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-primary" onclick="Ondisplay()">Show</button>
+        </div>
+    </div>
+   <div class="row">
+    <div class="col-3 mt-3">
+        <select  id="textname" onchange="Readname()">
+            <option >Pune</option>
+             <option >Mumbai</option>
+              <option >Phaltan</option>
+               <option >Satara</option>
+                <option >Nagpur</option>
+        </select>
+    </div>
+    <div class="col-3 mt-3">
+        <input type="text" id="CityName" placeholder="Enter City Name">
+    </div>
+   </div>
+    <div class="row">
+        <div class="col-3 mt-3">
+            <input type="text" id="txt" placeholder="Enter name">
+        </div>
+        <div class="col-3 mt-3">
+            <button class="btn btn-primary" onclick="Onread()">Read name</button>
+        </div>
+        <div class="col-3 mt-3">
+            <input type="text" id="txtName" placeholder="Copied Name">
+        </div>
+    </div>
+
+<div class="row">
+    <div class="col-3 txt1">
+        div1
+    </div>
+    <div class="col-3 txt1">
+        div2
+    </div>
+    <div class="col-3 txt1">
+        div3
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <button class="btn btn-secondary" onclick="samemethod()">Samecolor</button>
+    </div>
+</div>
+ <script>
+  
+
+ </script>
+
+
+
+
+
+
+
+</body>
+</html>

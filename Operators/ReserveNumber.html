@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function reserveNum(num){
+           const isnegative = num < 0;
+           const reserved =parseInt(Math.abs(num).toString().split("").reverse().join(""));
+           return isnegative ? - reserved:reserved;
+         }
+         console.log(reserveNum(234));
+         console.log(reserveNum(-908));
+       
+</script>
+
+        
+    
+</body>
+</html>

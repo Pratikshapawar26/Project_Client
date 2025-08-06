@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Ticket Assignment</title>
+</head>
+<body>
+
+    <h2>Support Ticket</h2>
+
+    <label for="employee">Assign to Employee:</label>
+    <select id="employee">
+        <option value="">-- Select Employee --</option>
+        <option value="John Doe">John Doe</option>
+        <option value="Alice Smith">Alice Smith</option>
+        <option value="Robert Brown">Robert Brown</option>
+    </select>
+
+    <button onclick="assignEmployee()">Assign</button>
+
+    <script>
+        // Support Ticket Object
+        let supportTicket = {
+            TicketNo: "TKT20250403",
+            CreatedBy: "Pratiksha Pawar",
+            CreatedDate: "2025-04-03",
+            AssigntoEmployeeName: "", // Initially empty
+            TicketDescription: "User is facing login issues on the portal."
+        };
+
+        function assignEmployee() {
+            let selectedEmployee = document.getElementById("employee").value;
+
+            if (selectedEmployee === "") {
+                alert("Please select an employee to assign.");
+                return;
+            }
+
+            // Assigning selected employee to the ticket
+            supportTicket.AssigntoEmployeeName = selectedEmployee;
+
+            // Printing updated ticket object in the console
+            console.log("Updated Support Ticket:", supportTicket);
+        }
+    </script>
+
+</body>
+</html>

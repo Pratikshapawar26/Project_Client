@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function savetodb(data, success, failure) {
+            let interspeed = Math.floor(Math.random() * 10) + 1;
+            if (interspeed > 4) {
+                success();
+            }
+            else {
+                failure();
+            }
+        }
+        savetodb("pratiksha", () => {
+            console.log(" Success : Your Data was saved : ");
+            savetodb("hello world",
+                () => {
+                    console.log("Success2 : Your Data Was Saved : ");
+                    savetodb("Hii", () => {
+                        console.log("Success3 :Your Date Was Saved");
+                    },
+                        () => {
+                            console.log("Failure3:week Connection")
+                        })
+
+                },
+                () => {
+                    console.log(" Failure2 :Week Connection ., data not Saved ")
+                })
+        },
+
+
+            () => {
+                console.log(" Failure :Week Connection ., data not Saved ");
+            })
+
+    </script>
+</body>
+
+</html>

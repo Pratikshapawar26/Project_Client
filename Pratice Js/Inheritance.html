@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // class product{
+        //   constructor(school){
+        //     this.SchoolName = school;
+        //   }
+        //   printdetails(){
+        //       console.log(`school: ${this.SchoolName} `);
+        //   }
+        // }
+        //   class Printname extends product{
+        //     constructor(school,Age){
+        //         super(school)
+        //         this.agelimit = Age;
+        //     }
+        //     Productdetails(){
+        //         console.log(` school : ${this.SchoolName}age :${this.agelimit}`)
+        //     }
+        //   }
+        //   const Print = new Printname("Sangola Collage",1000);
+        //   Print.Productdetails();
+        //   Print.printdetails();
+        //    print.printdetails();
+        //     print.Productdetails();
+        class Product {
+            constructor(name) {
+                this.name = name;
+            }
+            printdetails() {
+                console.log(`Name :${this.name}`);
+            }
+        }
+        class Productinform extends Product {
+            printproduct() {
+                const address = Math.random();
+
+                console.log(`name :${this.name} ,address :${address}`)
+            }
+        }
+
+
+        const showing = new Productinform("Pooja", "Phaltan");
+        showing.printdetails();
+        showing.printproduct();
+
+
+
+    </script>
+</body>
+
+</html>

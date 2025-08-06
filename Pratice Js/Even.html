@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="myButton" onclick="myButton1()">Click Me</button>
+    <p id="message"></p>
+
+    <script>
+        function myButton1() {
+            // let button = document.getElementById("myButton");
+            var Clickbtn = document.getElementById("message").textContent = "Hello pratiksha";
+
+        }
+        // button.onclick = function () {
+        //     document.getElementById("message").textContent = "Button was clicked!";
+        // };
+    </script>
+    <button id="clickBtn" onclick="BtnChange()">Click Me</button>
+    <p id="result"></p>
+
+    <script>
+
+        document.getElementById("clickBtn").addEventListener("click", function () {
+         document.getElementById("result").textContent = "You clicked the button!";
+        });
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!-- Create a function to check if a key exists in an object -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function ispresent(obj, key) {
+            if (key in obj) {
+                return "key and object is present";
+            }
+            else {
+                return "key and object is does not present";
+            }
+        }
+
+        const StudentDetails = {
+            name : "pratiksha",
+            city :"Phaltan"
+    }
+        console.log(ispresent(StudentDetails, "name"));
+        console.log(ispresent(StudentDetails, "mark"));
+    </script>
+    
+
+</body>
+
+</html>

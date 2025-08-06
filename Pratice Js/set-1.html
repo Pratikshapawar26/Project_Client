@@ -1,0 +1,45 @@
+<!--create a texbox to Enter number
+create Button with name check -
+on btn click check if Entered no is even or odd
+Display result in strong tag beside button-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <script>
+        function CheckNum(){
+            let N1 = parseInt(document.getElementById("Txt1").value);
+            let NumberShow;
+            if(N1%2==0){
+                NumberShow ="Even Number is : " + N1 ;
+            }
+            else{
+                NumberShow ="Odd Number is : "+N1 ;
+            }
+            document.getElementById("Result1").innerText = NumberShow;
+        }
+    </script>
+    <div class="row">
+        <div class="col-3">
+            <input type="text" id="Txt1"placeholder="Num">
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-3">
+            <button class="btn btn-primary" onclick="CheckNum()">Check Even & Odd No.</button>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-3">
+            <p id="Result1"></p>
+        </div>
+        </div>
+    
+</body>
+</html>

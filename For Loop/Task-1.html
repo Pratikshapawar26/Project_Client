@@ -1,0 +1,27 @@
+<!-- Write a logic to get Sum Of 10 numbers from 1-10.
+Print SUM in strong tag.
+Note : Use for loop to complete this task. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div class="row">
+        <div class="col-3">
+            <p  >The 1 to 10 Sum Value is :<strong id="Final_Ans"></strong></p>
+        </div>
+    </div>
+    <script>
+        var sum = 1;
+        debugger;
+        for(var i =1;i<10;i++){
+           document.getElementById("Final_Ans").textContent = sum ;
+           sum +=i;
+        }
+   </script>
+</body>
+</html>

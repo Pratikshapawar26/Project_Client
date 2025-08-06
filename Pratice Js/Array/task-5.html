@@ -1,0 +1,37 @@
+<!-- Create an array of RollNos
+Allow the user to get an element by entering an index number -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Create Array Roll No</h3>
+    <script>
+          const num =[12,3,20,10,21,33];
+          function ChkIndexnum(){
+            const index = document.getElementById("Txtelement").value;
+            let Result =document.getElementById("Txtresult");
+            if(index>=0 && index < num.length){
+                Result.innerText = num[index]; //textcontent
+            }
+            else{
+                Result.innerText = "Invalid Index Number";
+            }
+          }
+    </script>
+  <div class="row">
+    <div class="col-3">
+       <input type="text" id="Txtelement" class="form-control">
+    </div>
+    <div class="col-3">
+        <button class="btn btn-primary" onclick="ChkIndexnum()"> Enter Index Number</button>
+    </div>
+    <div class="col-3">
+        <p id="Txtresult"></p>
+    </div>
+  </div>   
+</body>
+</html>
