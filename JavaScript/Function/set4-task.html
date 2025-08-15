@@ -1,0 +1,25 @@
+<!--Create a function which has a parameter where we can send a word as parameter.
+And converts the first letter of word into upper case and Return New String.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function FirstLetterCaptial(word){
+            if (! word) return " ";
+            return word.charAt(0).toUpperCase()+word.slice(1);
+        }
+        console.log(FirstLetterCaptial("hello"));
+        console.log(FirstLetterCaptial("pratiksha"));
+        console.log(FirstLetterCaptial("katkar"));
+        console.log(FirstLetterCaptial("same"));
+        console.log(FirstLetterCaptial("name"));
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!--create a paragraph with some text
+if user hover mouse on paragraph add red color to p tag
+if user remove mouse from paragraph add black color to p tag-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect</title>
+    <style>
+        p {
+            color: black;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="text">Hover over this paragraph to change its color.</p>
+    <script>
+        const paragraph = document.getElementById("text");
+
+        paragraph.addEventListener("mouseover", function () {
+            paragraph.style.color = "red";
+        });
+
+        paragraph.addEventListener("mouseout", function () {
+            paragraph.style.color = "black";
+        });
+    </script>
+</body>
+
+</html>

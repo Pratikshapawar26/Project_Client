@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function calculate(num1, num2, operator) {
+            switch (operator) {
+                case '+':
+                    return num1 + num2;
+                case '-':
+                    return num1 - num2;
+                case '*':
+                    return num1 * num2;
+                case '/':
+                    if (num2 === 0) {
+                        return "Cannot divide by zero";
+                    }
+                    return num1 / num2;
+                default:
+                    return "Invalid operator";
+            }
+        }
+
+        // Example usage (can be integrated with HTML elements and event listeners)
+        let number1 = 10;
+        let number2 = 5;
+        let operation = '+';
+
+        let result = calculate(number1, number2, operation);
+        console.log(result); // Output: 15
+
+        operation = '-';
+        result = calculate(number1, number2, operation);
+        console.log(result); // Output: 5
+
+        operation = '*';
+        result = calculate(number1, number2, operation);
+        console.log(result); // Output: 50
+
+        operation = '/';
+        result = calculate(number1, number2, operation);
+        console.log(result); // Output: 2
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-image: "morskie-oko-tatry_1045114-186.avif";
+}
+
+body{
+  /* background-image: url("morskie-oko-tatry_1045114-186.avif");  */
+  background-size: cover;
+
+   
+}
+a{
+    color: black;
+    font-size: 20px;
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    align-content: end;
+    justify-content: flex-end;
+
+}
+.content{
+    border: 2px solid brown;
+    display: block;;
+    justify-content: center;
+}
